@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaProject.jnlp">
+    <information>
+        <title>JavaProject</title>
+        <vendor>Anay</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.4+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="JavaProject.jar" size="247244" download="eager"/>
+        <jar href="lib\jfoenix-9.0.1.jar" size="2143605" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="javaproject.AppLauncher" name="AppLauncher"/>
+</jnlp>
+

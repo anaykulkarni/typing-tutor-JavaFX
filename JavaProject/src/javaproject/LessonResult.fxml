@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" styleClass="LPbackground" stylesheets="@LPcss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.LessonResultController">
+   <top>
+      <AnchorPane prefHeight="118.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox />
+            <Label layoutX="371.0" layoutY="32.0" prefHeight="54.0" prefWidth="205.0" text=" TypeFaster" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="52.0" layoutX="323.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/appLogo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <VBox prefHeight="117.0" prefWidth="900.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Separator prefHeight="44.0" prefWidth="900.0" />
+            <HBox prefHeight="130.0" prefWidth="900.0" spacing="50.0">
+               <children>
+                  <JFXButton fx:id="goBackButton" alignment="CENTER" contentDisplay="CENTER" onAction="#goHome" prefHeight="44.0" prefWidth="500.0" styleClass="goBack" text="&lt;&lt;  Home" textFill="#142aba">
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="redoButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" onAction="#redoLesson" prefHeight="44.0" prefWidth="500.0" styleClass="lessonButton" text="Redo">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="nextButton" alignment="CENTER" layoutX="365.0" layoutY="10.0" onAction="#nextLesson" prefHeight="44.0" prefWidth="500.0" styleClass="lessonButton" text="Next Lesson &gt;&gt;">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="512.0" prefWidth="900.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="resultHead" layoutX="60.0" layoutY="58.0" prefHeight="79.0" prefWidth="326.0" text="Good Job!" textFill="#413f3f">
+               <font>
+                  <Font name="Arial" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="resultBody" layoutX="60.0" layoutY="131.0" prefHeight="62.0" prefWidth="266.0" text="You completed the lesson. Here are your results. We recommend a true accuracy of at least 95%." wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="216.0" fitWidth="428.0" layoutX="414.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/KeyboardVector.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="89.0" fitWidth="117.0" layoutX="731.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/icons8-verified-account-filled-100.png" />
+               </image>
+            </ImageView>
+            <HBox layoutX="58.0" layoutY="278.0" prefHeight="114.0" prefWidth="784.0" spacing="25.0" style="-fx-border-color: #ddd; -fx-border-radius: 7;">
+               <children>
+                  <VBox prefHeight="129.0" prefWidth="320.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="695.0" text="Speed" textFill="#777777">
+                           <padding>
+                              <Insets top="7.0" />
+                           </padding></Label>
+                        <HBox prefHeight="86.0" prefWidth="597.0">
+                           <children>
+                              <Label fx:id="speedWPM" alignment="CENTER" contentDisplay="CENTER" prefHeight="86.0" prefWidth="74.0" text="50">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="86.0" prefWidth="40.0" text="WPM" />
+                              <Separator orientation="VERTICAL" prefHeight="47.0" prefWidth="5.0">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </Separator>
+                              <Label fx:id="speedKPM" alignment="CENTER" prefHeight="86.0" prefWidth="84.0" text="12">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="86.0" prefWidth="33.0" text="KPM" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="11.0" layoutY="11.0" prefHeight="113.0" prefWidth="250.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="217.0" text="True Accuracy" textFill="#777777">
+                           <padding>
+                              <Insets top="7.0" />
+                           </padding></Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="trueAccuracy" alignment="CENTER" contentDisplay="CENTER" prefHeight="89.0" prefWidth="223.0" text="98.6">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="89.0" prefWidth="114.0" text="\%" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="172.0" layoutY="11.0" prefHeight="113.0" prefWidth="250.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="229.0" text="Typing Time" textFill="#777777">
+                           <padding>
+                              <Insets top="7.0" />
+                           </padding></Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="timeSpent" alignment="CENTER" contentDisplay="CENTER" prefHeight="92.0" prefWidth="250.0" text="3:33">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="444.0" layoutY="11.0" prefHeight="113.0" prefWidth="270.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="28.0" prefWidth="229.0" text="Troublesome Keys" textFill="#777777">
+                           <padding>
+                              <Insets top="7.0" />
+                           </padding></Label>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="troubleKeys" alignment="CENTER" contentDisplay="CENTER" prefHeight="92.0" prefWidth="238.0" text="A B C">
+                                 <font>
+                                    <Font size="48.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox layoutX="59.0" layoutY="404.0" prefHeight="34.0" prefWidth="782.0" style="-fx-border-color: #ddd; -fx-border-radius: 7;">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="192.0" text="Your Accuracy with backspace is : ">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="accuracy" prefHeight="31.0" prefWidth="57.0" text="98.99%">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

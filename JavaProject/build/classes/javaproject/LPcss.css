@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Apr-2018, 11:40:58 PM
+    Author     : Anay
+*/
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: #a19d9d;
+}
+.button{
+    -fx-border-color: #ffffff;
+    -fx-text-fill: white;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: transparent;
+}
+.button:hover{
+    -fx-border-color: #ffffff;
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #2F80FF;
+}
+.subpane{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+.LPbackground {
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+}
+.HomeButton, .HomeButton:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+}
+.lessonButton, .lessonButton:hover{
+    -fx-text-fill: brown;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+}
+.goBack, .goBack:hover{
+    -fx-text-fill: white;
+    -fx-background-color: #2F80FF;
+    -fx-border-color: none;
+    -fx-font-weight: bold;
+}
+.testBlockHbox{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #a19d9d;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="LPbackground" prefHeight="558.0" prefWidth="781.0" styleClass="LPbackground" stylesheets="@LPcss.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaproject.LandingPageController">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="60.0" layoutX="242.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/appLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="314.0" layoutY="113.0" prefHeight="103.0" prefWidth="254.0" text="TypeFaster" textFill="WHITE">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Label layoutX="248.0" layoutY="207.0" prefHeight="18.0" prefWidth="283.0" text="Learn to type faster. Take our typing lessons for free. " textFill="WHITE" />
+      <AnchorPane fx:id="subpane" layoutX="91.0" layoutY="321.0" prefHeight="196.0" prefWidth="598.0" styleClass="subpane">
+         <children>
+            <Separator layoutX="294.0" layoutY="37.0" orientation="VERTICAL" prefHeight="131.0" prefWidth="2.0" />
+            <JFXButton fx:id="learnTypingButton" layoutX="48.0" layoutY="104.0" onAction="#goToLessons" prefHeight="47.0" prefWidth="158.0" text="Learn touch Typing" textFill="WHITE" />
+            <JFXButton fx:id="quickTestButton" layoutX="384.0" layoutY="104.0" onAction="#goToTest" prefHeight="47.0" prefWidth="158.0" text="Quick Test" textFill="WHITE" />
+            <Label layoutX="20.0" layoutY="25.0" prefHeight="67.0" prefWidth="214.0" text="Speed up your learning progress with Ratatype typing tutor and develop valuable keyboarding skills!" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+            <Label layoutX="349.0" layoutY="30.0" prefHeight="67.0" prefWidth="202.0" text="Take an online typing test to find out your typing speed" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

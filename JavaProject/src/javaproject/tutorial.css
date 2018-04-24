@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-Apr-2018, 11:40:58 PM
+    Author     : Anay
+*/
+* {
+    -fx-primary: #110000;
+    -fx-secondary: #da0b04;
+    -fx-primarytext: #a19d9d;
+}
+
+.background {
+    -fx-background-color: linear-gradient(to bottom, #56CCF2, #2F80FF);
+}
+.lessonChoiceBox{
+    -fx-background-color: white;
+    -fx-border-color: #2F80FF;
+    
+}
+.keyboardButton{
+    -fx-background-color: white;
+    -fx-text-fill: #56CCF2;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.backspace{
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;   
+}
+.greenKeys{
+    -fx-background-color: #2ecc71;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.blueKeys{
+    -fx-background-color: #56CCF2;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.yellowKeys{
+    -fx-background-color: #f1c40f;
+    -fx-text-fill: white;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.homeKeys{
+    -fx-background-color: white;
+    -fx-text-fill: #56CCF2;
+    -fx-border-color: #f1c40f;
+    -fx-padding: 2.5px;
+    -fx-border-insets: 2.5px;
+    -fx-background-insets: 2.5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    
+}
+.HomeButton{
+    -fx-text-fill: white;
+    -fx-background-color: #f1c40f;
+    -fx-border-color: #f1c40f;
+    -fx-border-radius: 20px;
+}
+
+#warn{
+    -fx-background-color: #ffcdd2;
+}
+#normal{
+    
+}
