@@ -14,8 +14,5 @@ Completion of a lesson
 
 ![quicktest](https://user-images.githubusercontent.com/38681469/47602442-9899c380-d9fc-11e8-8349-1121ea3701fb.jpg)
 Quick Test  
-  
-
-![testresult](https://user-images.githubusercontent.com/38681469/47602443-9899c380-d9fc-11e8-9628-af64b2d7799b.jpg)
-Test Result.  
+ 
   
